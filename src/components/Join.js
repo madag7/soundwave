@@ -2,7 +2,6 @@ import {
   FormControl,
   InputLabel,
   Input,
-  FormHelperText,
   Button,
   Grid,
 } from '@mui/material'
@@ -16,40 +15,33 @@ export default function Join() {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        gap: '10%',
         paddingTop: '8%',
         paddingBottom: '8%',
       }}
     >
-      <h1>Join the fun.</h1>
-      <div style={{ backgroundColor: 'white' }}>
+      <h1 style={{fontSize: "39px"}}>Join the </h1>
+      <h1 style={{fontSize: "39px", marginRight: "80px", marginLeft: "1%", color: "#bc3a80"}}>fun.</h1>
+      <div style={{ backgroundColor: '#202027', padding:  "5% 5% 1% 5%", borderRadius: "15px" }}>
         <Grid item md={12}>
           <FormControl>
-            <InputLabel htmlFor="name">Name:</InputLabel>
-            <Input id="name" aria-actibeby="nombre" />
-            <FormHelperText id="nombre">Tu nombre </FormHelperText>
+            <InputLabel htmlFor="name" style={{color: "white", margin: "15px"}}>Name:</InputLabel>
+            <Input id="name" aria-actibeby="nombre" style={{width: "260px"}}/>
           </FormControl>
         </Grid>
         <Grid item md={12}>
           <FormControl>
-            <InputLabel htmlFor="email">Email:</InputLabel>
-            <Input id="email" type="email" aria-actibeby="email-helper" />
-            <FormHelperText id="email-helper">
-              Tu email personal{' '}
-            </FormHelperText>
+            <InputLabel htmlFor="email" style={{color: "white", margin: "15px"}}>Email:</InputLabel>
+            <Input id="email" type="email" aria-actibeby="email-helper" style={{width: "260px"}}/>
           </FormControl>
         </Grid>
         <Grid item md={12}>
           <FormControl>
-            <InputLabel htmlFor="psw">Password:</InputLabel>
-            <Input id="psw" type="password" aria-actibeby="password-helper" />
-            <FormHelperText id="password-helper">
-              Entre 8y 16 caraceres
-            </FormHelperText>
+            <InputLabel htmlFor="psw" style={{color: "white", margin: "15px"}} >Password:</InputLabel>
+            <Input id="psw" type="password" aria-actibeby="password-helper" style={{width: "260px"}}/>
           </FormControl>
         </Grid>
         <Grid item md={12}>
-          <Button variant="contained" color="primary">
+          <Button variant="contained" color="primary" style={{margin: "30px"}}>
             Iniciar Sesion
           </Button>
         </Grid>
